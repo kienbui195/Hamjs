@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let num = +prompt('Nhap so n:');
+        let result = isPrime(num);
+        if (result) {
+            document.write('<br/>'+ num + ' la snt');
+        } else
+            document.write('<br/>'+ num +  ' khong phai');
+
+        function isPrime(x) {
+            for (let i = 0; i < x -1 ; i++) {
+                if (x < 2) {
+                    return false;
+                }
+                if (x % i === 0) {
+                    return false;
+                }
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
