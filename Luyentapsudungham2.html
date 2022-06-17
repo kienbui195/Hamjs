@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*let input = +prompt('Nhap gia tri:');
+        let result = sqrtOf(input);
+        document.write('Binh phuong cua ' + input + ' la = ' + result);
+        function sqrtOf(value) {
+            return value*value;
+        }*/ //bai 1
+
+
+
+        let input = +prompt("nhap ban kinh: ");
+        let S = area(input);
+        let P = diameter(input);
+        document.write('Dien tich hinh tron = ' + S + '<br/>' + 'Chu vi hinh tron = ' + P);
+        function diameter(radius) {
+            return (2*Math.PI*radius);
+        }
+        function area(radius) {
+            return (radius*radius*Math.PI);
+        }
+    </script>
+
+</body>
+</html>
