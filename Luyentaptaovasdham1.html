@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      /*displayScreen();
+      function displayScreen() {
+          alert('Xin chao');
+      }*/ //bai 1
+
+
+      /*let num = +prompt('nhap n:');
+      let value = display(num);
+      console.log(value);
+      function display(x) {
+          x += 1;
+          return x;
+      }*/ //bai 2
+
+
+      /*let x = +prompt('nhap so thu 1:');
+      let y = +prompt('nhap so thu 2:');
+      document.write(Sosanh(x,y));
+      function Sosanh(a,b) {
+          if (a>b) {
+              alert(a + ' lon hon ' +  b);
+          } else return a+b;
+      }*/ //bai 3
+
+
+      /*function addNumbers() {
+          firstNum = 4;
+          secondNum = 8;
+          result = firstNum + secondNum;
+          return result;
+      }
+      result = 0;
+      alert(result);
+      result = addNumbers();
+      alert(result);*/ //bai 4
+
+
+
+      let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+      let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+      let input = '';
+      input = prompt('Nhap ten ngoi sao: ');
+      let indexOfarr2 = findStar(input, arr1);
+      document.write(arr2[indexOfarr2]);
+      FindStar(input, arr1);
+      function findStar(valueinput, arrx) {
+          let flag = false, index;
+          for (let i = 0; i < arrx.length ; i++) {
+              if (valueinput === arrx[i]) {
+                  flag = true;
+                  index = i;
+              }
+          }
+          if (flag) {
+              return index;
+          } else document.write("Khong tim thay ngoi sao nay.")
+      } //bai 5
+  </script>
+</body>
+</html>
