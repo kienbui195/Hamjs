@@ -15,7 +15,7 @@
 
 
 
-        let input = +prompt("nhap ban kinh: ");
+        /*let input = +prompt("nhap ban kinh: ");
         let S = area(input);
         let P = diameter(input);
         document.write('Dien tich hinh tron = ' + S + '<br/>' + 'Chu vi hinh tron = ' + P);
@@ -24,7 +24,110 @@
         }
         function area(radius) {
             return (radius*radius*Math.PI);
+        }*/ //bai2
+
+
+
+        /*let input = +prompt("Nhap so: ");
+        let result = factorialCalculation(input);
+        document.write(input + '!= ' + result);
+        function factorialCalculation(value) {
+            let result = 1;
+            if (value <= 0) {
+                document.write('Ban da nhap sai');
+            } else {
+                for (let i = 1; i <= value; i++) {
+                    result *= i;
+                }
+                return result;
+            }
+        }*/ //bai 3
+
+
+
+        /*let input = +prompt('nhap chuoi:');
+        let result = checkinput(input);
+        console.log(result);
+        function checkinput(text) {
+            let output = text.toString();
+            if (output < '0' || output > '9') {
+                return false;
+            } else return true;
+        }*/ // bai 4
+
+
+        /*let arr = [];
+        let result = 0;
+        for (let i = 0; i < 3; i++) {
+            arr[i] = +prompt('nhap so nguyen thu ' + (i+1) + ': ');
         }
+        if (Number.isInteger(arr[0]) && Number.isInteger(arr[1]) && Number.isInteger(arr[2])) {
+            result = FindMin(arr[0],arr[1],arr[2]);
+            alert('So nho nhat trong 3 so vua nhap la: ' + result );
+        } else {
+            alert('So ban nhap khong phai so nguyen:');
+        }
+
+        function FindMin(x,y,z) {
+            let min = x;
+            if (y < min) {
+                min = y;
+            } else if (z < min) {
+                min = z;
+            }
+            return min;
+        }*/ //bai 5
+
+
+
+        /*let input = +prompt('nhap so nguyen duong: ');
+        let result = positiveNumber(input);
+        function positiveNumber(x) {
+            if (x > 0 && Number.isInteger(x)) {
+                return true;
+            } else return false;
+        }*/ //bai 6
+
+
+
+        /*let arr = []; let result = 0;
+        for (let i = 0; i < 2; i++) {
+            arr[i] = +prompt('Nhap so nguyen thu ' + (i + 1) + ' :');
+        }
+        if (Number.isInteger(arr[0]) && Number.isInteger(arr[1])) {
+            result  = swap((arr[0]),(arr[1]));
+            console.log(result);
+        }
+        function swap(x,y) {
+            let temp = x;
+            x = y;
+            y = temp;
+            console.log(x);
+            console.log(y);
+        }*/ //bai 7 8
+
+
+
+        let arr = [];
+        let char = prompt('Nhap ki tu bat ki:');
+        let n = +prompt('Nhap chieu dai mang ki tu:');
+        for (let i = 0; i < n; i++) {
+            arr[i] = prompt('Nhap ki tu thu ' +  i +':');
+        }
+        document.write('arr = [' + arr + ']')
+        let result = Findchar(arr,char);
+        console.log(result);
+        function Findchar(arr,char) {
+            let text = char.toString();
+            let text2 = arr.toString();
+            for (let i = 0; i < text2.length; i++) {
+                if (text === text2[i]) return 1;
+                 else return -1;
+            }
+        }// bai 9
+
+
+
     </script>
 
 </body>
