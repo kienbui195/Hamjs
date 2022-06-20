@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <h2>Kiem tra mot chuoi ky co phai la chuoi doi xung khong</h2>
+        <p><input type="text" id="input"><button onclick="Main()">OK</button> </p>
+        <div id="result"></div>
+    <script>
+        function Main() {
+            let text = document.getElementById('input').value;
+            let arrtext = text.split("");
+            let flag = 0;
+            let count = 0;
+            for (let i = 0; i < (arrtext.length/2); i++) {
+                if (Check(arrtext)) {
+                    arrtext.pop();
+                    arrtext.shift();
+                    flag++;
+                }
+                count++;
+            }
+            if (flag === count && count > 1) {
+                document.getElementById('result').innerHTML = `<br/> Chuoi vua nhap la chuoi doi xung`;
+            } else {
+                document.getElementById('result').innerHTML = `<br/> Chuoi vua nhap khong phai la chuoi doi xung`;
+            }
+        }
+
+        function Check(arr) {
+            if (arr[0] === arr[arr.length - 1]) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
